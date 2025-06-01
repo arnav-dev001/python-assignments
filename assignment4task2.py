@@ -1,0 +1,15 @@
+write_file = open('assignment4task2.txt', 'w')
+write_input = write_file.write(input("Enter text to write to the file: "))
+write_file.close()
+print('Data successfully written to assignment4task2.txt.\n')
+
+append_file = open('assignment4task2.txt', 'a')
+append_input = append_file.write('\n' + input("\nEnter additional text to append: "))
+append_file.close()
+print('Data successfully appended.\n')
+
+read_file = open('assignment4task2.txt', 'r')
+print('\nFinal content of assignment4task2.txt: ')
+print_file = read_file.read()
+print(print_file)
+read_file.close()
